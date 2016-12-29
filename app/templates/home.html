@@ -2,9 +2,9 @@
 <section class="navbar"> <!-- navigation bar -->
     <a class="logo">Bloc Chat</a>
     <table class="room-list">
-        <tr class="room" ng-repeat="room in home.room.all track by $index">
+        <tr class="room" ng-repeat="room in home.rooms track by $index">
                 <td >
-                    <a >{{ room.$value }}</a>
+                    <a >{{ room.name }}</a>
                 </td>
         </tr>
     </table>
