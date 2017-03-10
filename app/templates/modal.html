@@ -1,19 +1,14 @@
-<div>
-      <div class="modal-header">
-        <h2 class="modal-title">Create new room</h2>
-      </div>
-      <div class="modal-body">
-        Enter a room name:
-        <br/>
-        <form ng-submit="modal.ok()">
-          <div class="input-group animated fadeIn">
-            <input type="text" class="form-control finderBar" ng-model="modal.name" title="name" placeholder="Your room name here" autofocus>
-            <h4>{{ modal.name }}</h4>
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" type="button" ng-click="modal.ok()">Create room</button>
-        <button class="btn btn-warning" type="button" ng-click="modal.cancel()">Cancel</button>
-      </div>
-</div>
+<form ng-submit="modal.submit()">
+    <div class="modal-header">
+        <h1>Create New Chatroom</h1>
+    </div>
+    <div class="modal-body">
+        <div class="form-group">
+            <input type="text" ng-model="modal.text" name="text" class="form-control" placeholder="Enter Chatroom Name">
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" ng-click="modal.dismiss()">Cancel</button>
+            <input type="submit" id="submit" value="Submit" class="btn btn-primary">
+    </div>
+</form>

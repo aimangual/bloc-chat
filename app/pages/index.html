@@ -4,21 +4,22 @@
         <meta charset="UTF-8">
         <title>Bloc Chat</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Neuton|Open+Sans|Raleway"&effect=font-effect-destruction rel="stylesheet">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300">
+        <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="/styles/normalize.css">
+        <link rel="stylesheet" type="text/css" href="/styles/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/styles/style.css">
     </head>
-    <body>
+    <body class="clearfix">
     
-        <div class="html" ui-view></div>
+        <ui-view></ui-view>
 
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <!-- Angular -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-cookies.js"></script>
         <!-- Firebase -->
         <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
         <script>
@@ -42,9 +43,11 @@
         
         <script src="/scripts/app.js"></script>
         <script src="/scripts/services/Room.js"></script>
-        <script src="/scripts/services/Message.js"></script>
+        <script src="/scripts/services/BlocChatCookies.js"></script>
+        <!--        <script src="/scripts/services/Message.js"></script>-->
         <script src="/scripts/controllers/HomeCtrl.js"></script>
         <script src="/scripts/controllers/ModalCtrl.js"></script>
-        <script src="/scripts/controllers/ModalInstanceCtrl.js"></script>
+        <!--        <script src="/scripts/controllers/ModalInstanceCtrl.js"></script>-->
+        <script src="/scripts/controllers/UsernamePromptCtrl.js"></script>
     </body>
 </html>

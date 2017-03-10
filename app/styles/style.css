@@ -1,102 +1,65 @@
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 5px; }
+*, *::before, *::after {
+    -moz-box-sizing: boder-box;
+    -webkit-box-sizing: boder-box;
+    box-sizing: border-box;
+}
+
 
 html {
-    height: 100%
-    background-color: #CB8C1D
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Neuton', serif;
-    color: #F2EFE4
-        /* App Colors: #2B2B2B, #DE1B1B, #F6F6F6, #E9E581, #F2EFE4, #CB8C1D, #4C3327, #BD3632 */
+    height: 100%;
+    font-size: 100%;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+
+    font-family: 'Open Sans';
+    min-height: 100%;
+    height: 100%;
 }
 
-h1 {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #007984;
-    font-size: 1.5rem;
-    text-align: left; 
+.wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
-
-h2 {
+.left, .right {
+  height: 100%;
+}
+section.left {
   text-align: center;
-  font-size: 2.5rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  color: #4C3327;
-  text-shadow: 0 2px 2px #2e3a6c;
+  float: left;
+  background-color: #DEDEDE;
+  width: 30%;
 }
 
-h3 {
-  color: #4C3327;
-  text-transform: uppercase;
-  font-size: 1.1em;
-  display: inline-block;
-  margin-left: 10%; 
+section.right {
+  float: right;
+  background-color: #FFFFFF;
+  width: 70%;
 }
 
-.logo {
-    font-family: 'Neuton', serif;
-    font-size: 56px;
-    color: #BD3632; 
+section.right h1, section.left a h3  {
+  text-align: center;
+  text-transform: capitalize;
 }
 
-.navbar {
-    position: fixed;
-    top: 100px;
-    left: 0px;
-    height: 100%;
-    width: 25%;
-    background-color: #CB8C1D;
-    overflow: scroll;
-    border-right: 2px solid #DE1B1B;
-    min-width: 285px;
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.room:hover {
-    color: #E9E581;
-    cursor: pointer;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.container {
-    height: 100%;
-    width: 70%;
-    background-color: #F2EFE4;
-    color: #4C3327;
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 1.5rem;
+.bold-capitalize {
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
-.table {
-    width: 90%;
-}
-
-.row {
-    height: 2rem;
-    border-bottom: 2px solid #BD3632;
-}
-
-.username {
-    width: 80%;
-}
-
-.sentAt {
-    width: 20%;
-}
-
-.oddRow {
-    background-color: #F6F6F6;
-    color: #4C3327;
+.chat {
+  width: 100%;
+  padding: 15px;
 }
